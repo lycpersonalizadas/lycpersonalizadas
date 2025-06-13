@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           Expertos en Gorras Publicitarias: Calidad y Diseño para tu Marca en Argentina
         </h1>
         <p className="mt-6 max-w-md mx-auto text-lg text-gray-300 sm:text-xl md:mt-8 md:max-w-3xl drop-shadow-sm">
-          En Lycpersonalizadas, con oficinas en Vicente López, somos especialistas en la creación de gorras publicitarias y gorras trucker personalizadas que potencian tu marca en toda Argentina. Con más de 10 años de experiencia, ofrecemos calidad premium y diseño experto para tus campañas de marketing, merchandising empresarial, eventos especiales como 15 años y mucho más. También personalizamos remeras y pilusos. ¡Destaca con estilo y profesionalismo!
+          Lycpersonalizadas (Vicente López): especialistas en gorras publicitarias y trucker personalizadas para potenciar tu marca en Argentina. Más de 10 años de experiencia en calidad premium y diseño para marketing, merchandising, eventos (15 años), remeras y pilusos. ¡Destaca con estilo!
         </p>
         <a
           href={whatsappLink}

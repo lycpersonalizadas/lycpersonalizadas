@@ -17,7 +17,7 @@ const ContactAndFooter: React.FC = () => {
             COTIZA TUS GORRAS PUBLICITARIAS Y TRUCKER EN ARGENTINA
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            ¿Listo para potenciar tu marca? Si buscas gorras publicitarias, gorras trucker por mayor, gorras personalizadas para 15 años, gorras sublimadas o merchandising empresarial de calidad, contáctanos. Desde nuestras oficinas en Vicente López, atendemos a toda Argentina. Envíanos un WhatsApp o email; nuestro equipo de diseño está listo para ayudarte a crear las mejores gorras promocionales.
+            ¿Buscas gorras publicitarias, trucker por mayor, personalizadas para 15 años, sublimadas o merchandising de calidad? Contáctanos desde Vicente López para atención en toda Argentina. WhatsApp o email para crear tus gorras promocionales.
           </p>
         </div>
       </section>
@@ -69,8 +69,8 @@ const ContactAndFooter: React.FC = () => {
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-6">Atención Online</h3>
                 <div className="space-y-2 text-gray-700">
-                  <p>Operamos con atención online personalizada.</p>
-                  <p>Contáctanos para tus gorras trucker publicitarias, remeras personalizadas y mas pedidos desde cualquier parte de Argentina.</p>
+                  <p>Atención online personalizada.</p>
+                  <p>Contáctanos para pedidos de gorras trucker, remeras y más, desde cualquier parte de Argentina.</p>
                 </div>
                 <p className="mt-6 text-gray-600 italic">
                   ¡Síguenos en redes y descubre nuestros trabajos de merchandising y servicios para eventos!
@@ -95,7 +95,7 @@ const ContactAndFooter: React.FC = () => {
               <WhatsAppIcon className="h-6 w-6" />
             </a>
           </div>
-          <p className="text-sm">&copy; {currentYear} Lycpersonalizadas. Expertos en gorras publicitarias, gorras trucker y productos promocionales de calidad premium. Oficinas en Vicente López. Envíos a toda Argentina.</p>
+          <p className="text-sm">&copy; {currentYear} Lycpersonalizadas. Gorras publicitarias, trucker y productos promocionales premium. Vicente López. Envíos a toda Argentina.</p>
           <p className="mt-2 text-sm flex items-center justify-center">
             Hecho con <HeartIcon className="h-4 w-4 text-red-500 mx-1" aria-hidden="true" /> para potenciar marcas en Argentina.
           </p>

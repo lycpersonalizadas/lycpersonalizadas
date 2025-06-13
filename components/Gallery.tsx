@@ -78,7 +78,7 @@ const Gallery: React.FC = () => {
             Galería de Gorras Publicitarias y Productos Promocionales
           </p>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-            Inspírate con nuestros trabajos en gorras publicitarias, gorras trucker personalizadas, remeras y más. Haz clic para ver la publicación en Instagram y conocer más detalles.
+            Inspírate con nuestros trabajos en gorras publicitarias, trucker personalizadas, remeras y más. Clic para ver la publicación en Instagram.
           </p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -101,7 +101,7 @@ const Gallery: React.FC = () => {
           ))}
         </div>
          <p className="mt-12 text-center text-gray-500 px-4">
-          Nota: Las imágenes de esta galería muestran nuestros trabajos reales de gorras publicitarias, gorras trucker personalizadas y otros productos. ¡Síguenos en Instagram para ver más ejemplos de merchandising empresarial y para eventos!
+          Nota: Esta galería muestra nuestros trabajos reales. ¡Síguenos en Instagram para más ejemplos de merchandising!
         </p>
       </div>
     </section>

@@ -53,7 +53,7 @@ const Features: React.FC = () => {
             Soluciones Promocionales que Destacan tu Marca en Argentina
           </p>
           <p className="mt-4 max-w-3xl mx-auto text-xl text-gray-500">
-            Lycpersonalizadas se especializa en crear gorras publicitarias, gorras trucker personalizadas y productos promocionales de alta calidad, con opciones por mayor, para toda Argentina. Desde nuestra base de operaciones en Vicente López, nuestro equipo de diseño y las avanzadas técnicas de estampado (sublimación, DTF, vinilo) garantizan artículos que reflejan la excelencia de tu marca. Clientes satisfechos avalan nuestro compromiso.
+            Creamos gorras publicitarias, trucker personalizadas y productos promocionales de alta calidad (opciones por mayor) para toda Argentina desde Vicente López. Nuestro diseño y técnicas de estampado (sublimación, DTF, vinilo) garantizan excelencia. Clientes satisfechos nos avalan.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ const Features: React.FC = () => {
             Excelencia en Técnicas de Estampado para tus Gorras Publicitarias y Trucker
           </h3>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
-            Dominamos diversas técnicas de estampado para ofrecerte gorras publicitarias, gorras trucker para sublimar (resultando en gorras trucker sublimadas de alta calidad) y productos personalizados con la máxima calidad, durabilidad y el impacto visual que tu marca necesita:
+            Aplicamos avanzadas técnicas de estampado para gorras publicitarias, trucker (incluyendo sublimación de alta calidad) y productos personalizados, asegurando calidad, durabilidad e impacto visual para tu marca:
           </p>
           <div className="mt-8 max-w-4xl mx-auto">
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-left">
@@ -80,7 +80,7 @@ const Features: React.FC = () => {
           <div className="mt-12 text-center">
             <div className="inline-flex items-center bg-green-100 text-green-700 font-semibold py-2 px-4 rounded-lg shadow">
               <TruckIcon className="h-6 w-6 mr-2" aria-hidden="true" />
-              <span>¡Enviamos tus gorras publicitarias, gorras trucker y productos a todo el país! Coordinamos con diversos medios de transporte y correos para asegurar una entrega segura y puntual en cualquier rincón de Argentina.</span>
+              <span>¡Enviamos tus gorras y productos a toda Argentina! Entregas seguras y puntuales a nivel nacional.</span>
             </div>
           </div>
 
