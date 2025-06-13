@@ -5,7 +5,7 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon, InstagramIcon, FacebookIcon, Heart
 const ContactAndFooter: React.FC = () => {
   const currentYear = new Date().getFullYear();
   const phoneNumber = "5491173671724"; 
-  const message = "Hola! Quisiera más información sobre sus gorras publicitarias y productos personalizados."; // Adjusted message slightly for footer context
+  const message = "Hola! Quisiera más información sobre sus gorras personalizadas y productos."; // Adjusted message
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -14,10 +14,10 @@ const ContactAndFooter: React.FC = () => {
       <section id="contact" className="bg-gray-50 py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            COTIZA TUS GORRAS PUBLICITARIAS Y TRUCKER EN ARGENTINA
+            COTIZA TUS GORRAS PERSONALIZADAS Y TRUCKER EN ARGENTINA
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            ¿Buscas gorras publicitarias, trucker por mayor, personalizadas para 15 años, sublimadas o merchandising de calidad? Contáctanos desde Vicente López para atención en toda Argentina. WhatsApp o email para crear tus gorras promocionales.
+            ¿Buscas gorras trucker por mayor, personalizadas para 15 años, sublimadas o merchandising de calidad? Contáctanos desde Vicente López para atención en toda Argentina. WhatsApp o email para crear tus diseños únicos.
           </p>
         </div>
       </section>
@@ -95,7 +95,7 @@ const ContactAndFooter: React.FC = () => {
               <WhatsAppIcon className="h-6 w-6" />
             </a>
           </div>
-          <p className="text-sm">&copy; {currentYear} Lycpersonalizadas. Gorras publicitarias, trucker y productos promocionales premium. Vicente López. Envíos a toda Argentina.</p>
+          <p className="text-sm">&copy; {currentYear} Lycpersonalizadas. Gorras trucker, personalizadas y productos promocionales premium. Vicente López. Envíos a toda Argentina. Tu gorra, tu estampa.</p>
           <p className="mt-2 text-sm flex items-center justify-center">
             Hecho con <HeartIcon className="h-4 w-4 text-red-500 mx-1" aria-hidden="true" /> para potenciar marcas en Argentina.
           </p>

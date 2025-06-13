@@ -11,17 +11,17 @@ const Hero: React.FC = () => {
       <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
         <img
           src="https://ik.imagekit.io/lmpdfv6pk/ssssss.jpg?updatedAt=1749420143323"
-          alt="Fondo de gorras publicitarias y productos promocionales de Lycpersonalizadas, servicio para toda Argentina"
+          alt="Fondo de gorras personalizadas y productos promocionales de Lycpersonalizadas, servicio para toda Argentina"
           className="w-full h-full object-center object-cover"
         />
       </div>
       <div aria-hidden="true" className="absolute inset-0 bg-gray-900 opacity-80"></div>
       <div className="relative max-w-4xl mx-auto py-32 px-6 flex flex-col items-center text-center sm:py-48 lg:px-0">
         <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl drop-shadow-md">
-          Expertos en Gorras Publicitarias: Calidad y Diseño para tu Marca en Argentina
+          Expertos en Gorras Personalizadas: Calidad y Diseño para tu Marca en Argentina
         </h1>
         <p className="mt-6 max-w-md mx-auto text-lg text-gray-300 sm:text-xl md:mt-8 md:max-w-3xl drop-shadow-sm">
-          Lycpersonalizadas (Vicente López): especialistas en gorras publicitarias y trucker personalizadas para potenciar tu marca en Argentina. Más de 10 años de experiencia en calidad premium y diseño para marketing, merchandising, eventos (15 años), remeras y pilusos. ¡Destaca con estilo!
+          Lycpersonalizadas (Vicente López): especialistas en gorras trucker personalizadas y diseños únicos para potenciar tu marca en Argentina. Más de 10 años de experiencia en calidad premium para marketing, merchandising, eventos (15 años), remeras y pilusos.
         </p>
         <a
           href={whatsappLink}
