@@ -15,55 +15,55 @@ const galleryImages = [
   {
     id: 1,
     src: "https://ik.imagekit.io/enoz7muet/foto1.jpeg", 
-    alt: "Gorra trucker premium, ideal para merchandising empresarial en Argentina - Ver en Instagram", 
+    alt: "Gorra trucker de alta gama, perfecta como artículo corporativo en Argentina - Ver en Instagram", 
     postUrl: "https://www.instagram.com/p/DAn_FegPB25/?igsh=MWR1bDl0MnE0MDdm" 
   },
   {
     id: 2,
     src: "https://ik.imagekit.io/lmpdfv6pk/foto5.jpeg?updatedAt=1749404021687", 
-    alt: "Gorra trucker negra personalizada 'Lycpersonalizadas', ejemplo de gorra personalizada para empresas - Ver en Instagram", 
+    alt: "Modelo trucker negro con logo 'Lycpersonalizadas', muestra de gorra corporativa - Ver en Instagram", 
     postUrl: "https://www.instagram.com/p/CDPoXcsD4eT/?igsh=MTlzNXd6eG5paGM5Zg==" 
   },
   {
     id: 3,
     src: "https://ik.imagekit.io/lmpdfv6pk/foto4.jpeg?updatedAt=1749404203432",
-    alt: "Variedad de gorras trucker sublimadas, perfectas para eventos y merchandising Argentina - Ver en Instagram",
+    alt: "Surtido de gorras camionero con sublimación, ideal para celebraciones y material de marca en Argentina - Ver en Instagram",
     postUrl: "https://www.instagram.com/p/CW6scJmvMA5/?igsh=MTVhbWVnOGYxeHN6eQ=="
   },
   {
     id: 4,
     src: "https://ik.imagekit.io/lmpdfv6pk/foto2.jpeg?updatedAt=1749404260144",
-    alt: "Detalle de gorras personalizadas sublimadas, ejemplo de productos promocionales y gorras para 15 años - Ver en Instagram", 
+    alt: "Primer plano de gorras con diseño propio con sublimación, muestra de artículos publicitarios y para quinceañeras - Ver en Instagram", 
     postUrl: "https://www.instagram.com/p/C40rWEfLBbb/?igsh=Yno2NWlxNGtjMjhi" 
   },
   {
     id: 5,
     src: "https://ik.imagekit.io/lmpdfv6pk/foto3.jpeg?updatedAt=1749404288172", 
-    alt: "Grupo de gorras personalizadas con diversos diseños, calidad Lycpersonalizadas para promoción por mayor - Ver en Instagram", 
+    alt: "Conjunto de gorras a medida con múltiples diseños, calidad Lycpersonalizadas para publicidad masiva - Ver en Instagram", 
     postUrl: "https://www.instagram.com/p/C3c-qFPMCHn/?igsh=Z2R0dnV0ZjJnNWw=" 
   },
   {
     id: 6,
     src: "https://ik.imagekit.io/lmpdfv6pk/WhatsApp%20Image%202023-02-19%20at%2021.08.39.jpeg?updatedAt=1749417861720", 
-    alt: "Muestra de gorras trucker con frases y logos, ideales para campañas y merchandising empresarial - Ver en Instagram", 
+    alt: "Ejemplos de gorras estilo camionero con textos y logos, óptimas para campañas y artículos corporativos - Ver en Instagram", 
     postUrl: "https://www.instagram.com/p/CfCKyZfr2wX/?igsh=YXN2OWc0YXQwOXN3" 
   },
   {
     id: 7,
     src: "https://ik.imagekit.io/lmpdfv6pk/victor.jpg?updatedAt=1749420482681",
-    alt: "Gorra personalizada 'Victor' con diseño elegante, ejemplo de merchandising personalizado por Lycpersonalizadas - Ver en Instagram",
+    alt: "Gorra 'Victor' con diseño sofisticado, creación de Lycpersonalizadas - Ver en Instagram",
     postUrl: "https://www.instagram.com/p/Cs_-J3Gvxmn/?igsh=bW03aXc2NjVoYXM3" 
   },
   {
     id: 8,
     src: "https://ik.imagekit.io/lmpdfv6pk/pilusoss.jpg?updatedAt=1749420634121", 
-    alt: "Colección de pilusos promocionales personalizados, alternativa a gorras promocionales, merchandising Argentina - Ver en Instagram",
+    alt: "Selección de pilusos publicitarios con diseño propio, opción diferente para material de marca en Argentina - Ver en Instagram",
     postUrl: "https://www.instagram.com/p/DCHXfegvdaN/?igsh=Ym9wZ3owcHJsbWU4" 
   },
   {
     id: 9,
     src: "https://ik.imagekit.io/lmpdfv6pk/CLIENTES.jpg?updatedAt=1749430659227",
-    alt: "Collage de gorras personalizadas y trucker para clientes satisfechos, ejemplos de merchandising - Ver más",
+    alt: "Composición de gorras con diseño propio y trucker para clientes felices, ejemplos de material promocional - Ver más",
     postUrl: "https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTcyNzk0NDA4MTk2OTgx?story_media_id=1944791919201607256&igsh=MXdoODFpZzl3M21ibw==" 
   }
 ];
@@ -75,10 +75,10 @@ const Gallery: React.FC = () => {
         <div className="text-center">
           <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">Nuestra Creatividad en Acción</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Galería de Gorras Trucker y Productos Promocionales
+            Muestrario de Gorras Trucker y Artículos Publicitarios
           </p>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-            Inspírate con nuestros trabajos en gorras trucker personalizadas, diseños únicos, remeras y más. Clic para ver la publicación en Instagram.
+            Descubre nuestra creatividad en gorras estilo camionero a medida, creaciones originales, remeras y otros productos. Haz clic para explorar en Instagram.
           </p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -101,7 +101,7 @@ const Gallery: React.FC = () => {
           ))}
         </div>
          <p className="mt-12 text-center text-gray-500 px-4">
-          Nota: Esta galería muestra nuestros trabajos reales. ¡Síguenos en Instagram para más ejemplos de gorras personalizadas y merchandising!
+          Nota: Esta galería exhibe nuestros proyectos auténticos. ¡Acompáñanos en Instagram para ver más creaciones de gorras y artículos de marca!
         </p>
       </div>
     </section>

@@ -5,25 +5,13 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon, InstagramIcon, FacebookIcon, Heart
 const ContactAndFooter: React.FC = () => {
   const currentYear = new Date().getFullYear();
   const phoneNumber = "5491173671724"; 
-  const message = "Hola! Quisiera más información sobre sus gorras personalizadas y productos."; // Adjusted message
+  const message = "Hola! Quisiera más información sobre sus gorras con diseños propios y productos."; // Adjusted message
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <>
-      {/* Top Title Section */}
+      {/* Information Card Section (Now First) */}
       <section id="contact" className="bg-gray-50 py-12 sm:py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            COTIZA TUS GORRAS PERSONALIZADAS Y TRUCKER EN ARGENTINA
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            ¿Buscas gorras trucker por mayor, personalizadas para 15 años, sublimadas o merchandising de calidad? Contáctanos desde Vicente López para atención en toda Argentina. WhatsApp o email para crear tus diseños únicos.
-          </p>
-        </div>
-      </section>
-
-      {/* Information Card Section */}
-      <section className="bg-gray-50 pb-16 sm:pb-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-lg shadow-xl p-6 sm:p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -69,15 +57,27 @@ const ContactAndFooter: React.FC = () => {
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-6">Atención Online</h3>
                 <div className="space-y-2 text-gray-700">
-                  <p>Atención online personalizada.</p>
-                  <p>Contáctanos para pedidos de gorras trucker, remeras y más, desde cualquier parte de Argentina.</p>
+                  <p>Asistencia online personalizada para tus consultas.</p>
+                  <p>Comunícate para solicitar gorras estilo camionero, remeras y otros artículos, desde toda Argentina.</p>
                 </div>
                 <p className="mt-6 text-gray-600 italic">
-                  ¡Síguenos en redes y descubre nuestros trabajos de merchandising y servicios para eventos!
+                  ¡Explora nuestras redes y conoce nuestros proyectos de material de marca y soluciones para celebraciones!
                 </p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      
+      {/* Top Title Section (Now Second) */}
+      <section className="bg-gray-50 pb-16 sm:pb-24 pt-12 sm:pt-16"> {/* Added pt padding to maintain separation */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            SOLICITA PRESUPUESTO PARA TUS GORRAS CON DISEÑO PROPIO Y TRUCKER EN ARGENTINA
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            ¿Interesado en gorras trucker al por mayor, modelos para quinceañeras, con sublimación o material de marca de primera? Comunícate desde Vicente López; atendemos a nivel nacional. Escríbenos por WhatsApp o email para desarrollar tus ideas exclusivas.
+          </p>
         </div>
       </section>
 
@@ -95,9 +95,9 @@ const ContactAndFooter: React.FC = () => {
               <WhatsAppIcon className="h-6 w-6" />
             </a>
           </div>
-          <p className="text-sm">&copy; {currentYear} Lycpersonalizadas. Gorras trucker, personalizadas y productos promocionales premium. Vicente López. Envíos a toda Argentina. Tu gorra, tu estampa.</p>
+          <p className="text-sm">&copy; {currentYear} LYCPERSONALIZADAS. Gorras estilo camionero, diseños a medida y artículos publicitarios de alta gama. Vicente López. Cobertura nacional. Tu gorra, tu estampa.</p>
           <p className="mt-2 text-sm flex items-center justify-center">
-            Hecho con <HeartIcon className="h-4 w-4 text-red-500 mx-1" aria-hidden="true" /> para potenciar marcas en Argentina.
+            Creado con <HeartIcon className="h-4 w-4 text-red-500 mx-1" aria-hidden="true" /> para impulsar marcas en todo el país.
           </p>
         </div>
       </footer>

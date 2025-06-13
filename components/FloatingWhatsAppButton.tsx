@@ -5,7 +5,7 @@ import { WhatsAppIcon } from './icons';
 const FloatingWhatsAppButton: React.FC = () => {
   // Actualizado el número de WhatsApp
   const phoneNumber = "5491173671724"; 
-  const message = "Hola! Quisiera cotizar gorras trucker personalizadas.";
+  const message = "Hola! Quisiera cotizar gorras trucker con diseños propios.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (

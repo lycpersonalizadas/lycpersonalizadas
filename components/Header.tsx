@@ -9,7 +9,7 @@ const Header: React.FC = () => {
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center">
               <img src="https://ik.imagekit.io/lmpdfv6pk/WhatsApp%20Image%202023-02-20%20at%2021.56.07.jpeg?updatedAt=1749420232079" alt="Lycpersonalizadas Logo" className="h-10 w-auto" />
-              <span className="ml-3 text-xl font-bold text-gray-800 hover:text-indigo-600 transition-colors">LYCPERSONALIZADAS</span>
+              <span className="ml-3 text-lg font-semibold text-gray-700 hover:text-indigo-600 transition-colors">MERCHANDISING PERSONALIZADO</span>
             </a>
           </div>
           <nav className="hidden md:flex space-x-8">

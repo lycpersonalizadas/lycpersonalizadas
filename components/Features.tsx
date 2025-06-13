@@ -7,40 +7,40 @@ import Gallery from './Gallery';
 const featuresData = [
   {
     icon: <PartyIcon className="h-6 w-6" aria-hidden="true" />,
-    title: 'Cotillón y Gorras Temáticas para Eventos',
-    description: 'Diseñamos gorras temáticas, gorras personalizadas para 15 años, para niños, remeras y artículos de cotillón únicos. Anima tus fiestas con detalles promocionales memorables.',
+    title: 'Artículos Festivos y Gorras Temáticas para Celebraciones',
+    description: 'Creamos gorras con motivos especiales, modelos para quinceañeras y niños, remeras y cotillón original. Dale vida a tus eventos con elementos publicitarios inolvidables.',
   },
   {
     icon: <BriefcaseIcon className="h-6 w-6" aria-hidden="true" />,
-    title: 'Gorras Trucker y Merchandising Empresarial',
-    description: 'Fortalece tu marca con gorras trucker de alta calidad para empresas, remeras y regalos corporativos. Soluciones de merchandising empresarial efectivas para toda Argentina, desde nuestras oficinas en Vicente López.',
+    title: 'Gorras Estilo Camionero y Artículos Corporativos',
+    description: 'Impulsa tu identidad corporativa con gorras trucker de primera línea, remeras y obsequios empresariales. Ofrecemos soluciones de material de marca efectivas en todo el territorio argentino, operando desde Vicente López.',
   },
   {
     icon: <StarIcon className="h-6 w-6" aria-hidden="true" />,
-    title: 'Calidad Premium en Gorras y Estampados',
-    description: 'Compromiso con la excelencia en cada gorra personalizada y trucker. Utilizamos materiales de primera y técnicas avanzadas (sublimación, DTF, vinilo) para asegurar durabilidad y acabados impecables.',
+    title: 'Excelencia en Materiales y Técnicas de Impresión',
+    description: 'Nuestro compromiso es la máxima calidad en cada gorra a medida y modelo trucker. Empleamos insumos superiores y métodos de estampado de vanguardia (sublimación, DTF, vinilo) para garantizar resistencia y terminaciones perfectas.',
   },
   {
     icon: <PaletteIcon className="h-6 w-6" aria-hidden="true" />,
-    title: 'Diseño Creativo para Gorras Promocionales',
-    description: 'Nuestro equipo transforma tu idea en gorras personalizadas, trucker sublimadas y productos impactantes. Desde logos para merchandising Argentina hasta diseños complejos, creamos artículos únicos.',
+    title: 'Ingenio en Diseño para Artículos Publicitarios',
+    description: 'Nuestro equipo convierte tu visión en gorras con diseños propios, modelos trucker sublimados y piezas de gran impacto visual. Desde la creación de logos para tu merchandising hasta conceptos elaborados, desarrollamos artículos exclusivos.',
   },
 ];
 
 const printingTechniquesAndProducts = [
-  'Gorras Personalizadas de alto impacto para campañas y eventos.',
-  'Gorras Trucker Personalizadas: Diseños exclusivos para tu marca o evento.',
-  'Gorras por Mayor: Soluciones para grandes pedidos y campañas.',
-  'Estampado para Gorras Trucker Sublimadas: Colores vibrantes y durabilidad excepcional.',
-  'Gorras Trucker para Sublimar: Calidad preparada para tu creatividad.',
-  'Gorras para Ocasiones Especiales: Personalización para 15 años, fiestas infantiles y más.',
-  'Merchandising para Empresas en Argentina: Artículos promocionales de impacto.',
-  'Estampado DTF Textil: Alta definición para logos en gorras y remeras.',
-  'Vinilo Textil Premium: Acabados especiales para gorras promocionales con un toque distintivo.',
-  'Sublimación Full-Print: Diseños vibrantes, ideal para gorras temáticas y remeras.',
-  'Remeras Promocionales Personalizadas: Calidad y estampados duraderos para tu marca.',
-  'Pilusos Publicitarios y Merchandising Original.',
-  'Asesoramiento en Diseño de Logos para Gorras Personalizadas y Productos Promocionales.'
+  'Gorras con diseños únicos de gran impacto para campañas y celebraciones.',
+  'Modelos Trucker a Medida: Diseños originales para tu marca o festejo.',
+  'Venta de Gorras al Por Mayor: Ideal para pedidos voluminosos y publicidad.',
+  'Impresión en Gorras Trucker Sublimadas: Tonos intensos y resistencia superior.',
+  'Bases de Gorras Trucker para Sublimación: Calidad lista para tu ingenio.',
+  'Gorras Conmemorativas: Adaptación para quinceaños, eventos infantiles, etc.',
+  'Material de Marca para Negocios en Argentina: Elementos publicitarios que destacan.',
+  'Impresión DTF Textil: Máxima definición para logos en gorras y prendas.',
+  'Vinilo Textil de Alta Gama: Terminaciones especiales para artículos publicitarios con un sello único.',
+  'Sublimación Completa: Creaciones coloridas, perfectas para gorras temáticas y camisetas.',
+  'Prendas Publicitarias a Medida: Calidad y estampas resistentes para tu identidad.',
+  'Pilusos de Promoción y Artículos de Merchandising Creativos.',
+  'Consultoría en Diseño de Logos para Gorras Exclusivas y Material Publicitario.'
 ];
 
 const Features: React.FC = () => {
@@ -48,12 +48,12 @@ const Features: React.FC = () => {
     <section id="features" className="py-16 bg-gray-100 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">Expertos en Gorras Trucker y Diseños Únicos</h2>
+          <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">Especialistas en Gorras Trucker y Creaciones Distintivas</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Soluciones Promocionales que Destacan tu Marca en Argentina
+            Artículos Publicitarios que Realzan tu Marca a Nivel Nacional
           </p>
           <p className="mt-4 max-w-3xl mx-auto text-xl text-gray-500">
-            Creamos gorras trucker personalizadas, diseños únicos y productos promocionales de alta calidad (opciones por mayor) para toda Argentina desde Vicente López. Nuestro diseño y técnicas de estampado (sublimación, DTF, vinilo) garantizan excelencia. Clientes satisfechos nos avalan.
+            Desde Vicente López, Lycpersonalizadas se especializa en gorras trucker con diseños propios y conceptos originales para impulsar tu marca en todo el país. Contamos con más de una década de experiencia ofreciendo calidad superior para estrategias de marketing, artículos de merchandising, celebraciones (como fiestas de 15), remeras y pilusos.
           </p>
         </div>
 
@@ -61,10 +61,10 @@ const Features: React.FC = () => {
 
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-semibold tracking-tight text-gray-800 sm:text-3xl">
-            Excelencia en Técnicas de Estampado para tus Gorras Personalizadas y Trucker
+            Maestría en Estampado para tus Gorras Exclusivas y Trucker
           </h3>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
-            Aplicamos avanzadas técnicas de estampado para gorras personalizadas, trucker (incluyendo sublimación de alta calidad) y productos únicos, asegurando calidad, durabilidad e impacto visual para tu marca:
+            Utilizamos métodos de impresión de última generación para gorras a medida, modelos trucker (incluida sublimación superior) y artículos distintivos, garantizando acabados de alta calidad, resistencia e impacto para tu identidad visual:
           </p>
           <div className="mt-8 max-w-4xl mx-auto">
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-left">
@@ -80,7 +80,7 @@ const Features: React.FC = () => {
           <div className="mt-12 text-center">
             <div className="inline-flex items-center bg-green-100 text-green-700 font-semibold py-2 px-4 rounded-lg shadow">
               <TruckIcon className="h-6 w-6 mr-2" aria-hidden="true" />
-              <span>¡Enviamos tus gorras y productos a toda Argentina! Entregas seguras y puntuales a nivel nacional.</span>
+              <span>¡Despachamos tus pedidos a cualquier rincón de Argentina! Entregas fiables y puntuales en todo el país.</span>
             </div>
           </div>
 
