@@ -7,10 +7,11 @@ const ContactAndFooter: React.FC = () => {
   const phoneNumber = "5491173671724"; 
   const message = "Hola! Quisiera más información sobre sus gorras con diseños propios y productos."; // Adjusted message
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  const instagramHandle = "lycpersonalizadas"; // Your Instagram handle
 
   return (
     <>
-      {/* Information Card Section (Now First) */}
+      {/* Information Card Section (Remains First) */}
       <section id="contact" className="bg-gray-50 py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-lg shadow-xl p-6 sm:p-8 md:p-12">
@@ -69,7 +70,7 @@ const ContactAndFooter: React.FC = () => {
         </div>
       </section>
       
-      {/* Top Title Section (Now Second) */}
+      {/* Top Title Section (Remains Second) */}
       <section className="bg-gray-50 pb-16 sm:pb-24 pt-12 sm:pt-16"> {/* Added pt padding to maintain separation */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -81,24 +82,69 @@ const ContactAndFooter: React.FC = () => {
         </div>
       </section>
 
-      {/* Bottom Footer Bar */}
-      <footer style={{ backgroundColor: '#0D1A2E' }} className="text-gray-400 py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center space-x-6 mb-6">
-            <a href="https://www.instagram.com/lycpersonalizadas?igsh=NnMzMTR4ejlieTJs" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Lycpersonalizadas" className="text-gray-400 hover:text-white transition-colors">
-              <InstagramIcon className="h-6 w-6" />
-            </a>
-            <a href="https://www.facebook.com/share/16piV9T2vA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Lycpersonalizadas" className="text-gray-400 hover:text-white transition-colors">
-              <FacebookIcon className="h-6 w-6" />
-            </a>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Lycpersonalizadas" className="text-gray-400 hover:text-white transition-colors">
-              <WhatsAppIcon className="h-6 w-6" />
-            </a>
+      {/* New Footer Design - Lilac Theme */}
+      <footer className="bg-purple-700 text-purple-100 pt-12 pb-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            {/* Column 1: Brand Info */}
+            <div>
+              <h5 className="text-lg font-semibold text-white mb-3">MERCHANDISING PERSONALIZADO</h5>
+              <p className="text-sm">
+                Gorras estilo camionero, diseños a medida y artículos publicitarios de alta gama. Vicente López. Cobertura nacional.
+              </p>
+            </div>
+
+            {/* Column 2: Navigation */}
+            <div>
+              <h5 className="text-lg font-semibold text-white mb-3">Navegación</h5>
+              <ul className="space-y-2 text-sm">
+                <li><a href="#features" className="hover:text-white transition-colors">Servicios</a></li>
+                <li><a href="#gallery" className="hover:text-white transition-colors">Galería</a></li>
+                <li><a href="#contact" className="hover:text-white transition-colors">Contacto</a></li>
+              </ul>
+            </div>
+
+            {/* Column 3: Quote Contact */}
+            <div>
+              <h5 className="text-lg font-semibold text-white mb-3">Cotiza Ahora</h5>
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-black bg-yellow-400 hover:bg-yellow-500 transition-colors shadow-md"
+              >
+                <WhatsAppIcon className="h-5 w-5 mr-2" />
+                Consultar Precios
+              </a>
+              <p className="text-xs mt-2 text-purple-200">Ideal para pedidos por mayor y empresas.</p>
+            </div>
+
+            {/* Column 4: Follow Us */}
+            <div>
+              <h5 className="text-lg font-semibold text-white mb-3">Síguenos</h5>
+              <div className="flex space-x-4 mb-2">
+                <a href="https://www.instagram.com/lycpersonalizadas?igsh=NnMzMTR4ejlieTJs" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Lycpersonalizadas" className="hover:text-white transition-colors">
+                  <InstagramIcon className="h-6 w-6" />
+                </a>
+                <a href="https://www.facebook.com/share/16piV9T2vA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Lycpersonalizadas" className="hover:text-white transition-colors">
+                  <FacebookIcon className="h-6 w-6" />
+                </a>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Lycpersonalizadas" className="hover:text-white transition-colors">
+                  <WhatsAppIcon className="h-6 w-6" />
+                </a>
+              </div>
+              <p className="text-sm">@{instagramHandle}</p>
+            </div>
           </div>
-          <p className="text-sm">&copy; {currentYear} LYCPERSONALIZADAS. Gorras estilo camionero, diseños a medida y artículos publicitarios de alta gama. Vicente López. Cobertura nacional. Tu gorra, tu estampa.</p>
-          <p className="mt-2 text-sm flex items-center justify-center">
-            Creado con <HeartIcon className="h-4 w-4 text-red-500 mx-1" aria-hidden="true" /> para impulsar marcas en todo el país.
-          </p>
+
+          <hr className="border-t border-purple-500 my-8" />
+
+          <div className="text-center text-sm">
+            <p>&copy; {currentYear} LYCPERSONALIZADAS. Todos los derechos reservados. Tu gorra, tu estampa.</p>
+            <p className="mt-1 flex items-center justify-center">
+              Creado con <HeartIcon className="h-4 w-4 text-red-500 mx-1" aria-hidden="true" /> para impulsar marcas.
+            </p>
+          </div>
         </div>
       </footer>
     </>

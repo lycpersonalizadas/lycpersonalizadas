@@ -1,8 +1,26 @@
 
 import React from 'react';
 import FeatureCard from './FeatureCard';
-import { PartyIcon, BriefcaseIcon, StarIcon, PaletteIcon, CheckCircleIcon, TruckIcon } from './icons';
+import { PartyIcon, BriefcaseIcon, StarIcon, PaletteIcon, CheckCircleIcon, TruckIcon, WhatsAppIcon, EnvelopeIcon } from './icons'; // Added WhatsAppIcon, EnvelopeIcon
 import Gallery from './Gallery'; 
+
+const orderSteps = [
+  {
+    icon: <WhatsAppIcon className="h-7 w-7" aria-hidden="true" />, // Using WhatsApp as primary, email mentioned in text.
+    title: 'Paso 1: Contacto y Asesoramiento',
+    description: 'Contáctanos vía WhatsApp o email. Nuestros asesores te guiarán con valores, productos y diseños disponibles para tu proyecto.',
+  },
+  {
+    icon: <CheckCircleIcon className="h-7 w-7" aria-hidden="true" />,
+    title: 'Paso 2: Proceso de Producción',
+    description: 'Una vez acordados los detalles y confirmada tu orden, iniciamos la producción de tus artículos personalizados.',
+  },
+  {
+    icon: <TruckIcon className="h-7 w-7" aria-hidden="true" />,
+    title: 'Paso 3: Entrega o Envío',
+    description: 'Finalizada la fabricación, preparamos tu pedido para la entrega o el envío a cualquier punto de Argentina.',
+  },
+];
 
 const featuresData = [
   {
@@ -55,6 +73,25 @@ const Features: React.FC = () => {
           <p className="mt-4 max-w-3xl mx-auto text-xl text-gray-500">
             Desde Vicente López, Lycpersonalizadas se especializa en gorras trucker con diseños propios y conceptos originales para impulsar tu marca en todo el país. Contamos con más de una década de experiencia ofreciendo calidad superior para estrategias de marketing, artículos de merchandising, celebraciones (como fiestas de 15), remeras y pilusos.
           </p>
+        </div>
+
+        {/* Pasos para realizar el pedido */}
+        <div className="mt-16 mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-semibold tracking-tight text-gray-800 sm:text-3xl">
+              Realizar tu Pedido es Muy Sencillo
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-1 lg:grid-cols-3 lg:gap-x-8">
+            {orderSteps.map((step) => (
+              <FeatureCard
+                key={step.title}
+                icon={step.icon}
+                title={step.title}
+                description={step.description}
+              />
+            ))}
+          </div>
         </div>
 
         <Gallery /> 
