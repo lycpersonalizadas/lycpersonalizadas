@@ -21,23 +21,23 @@ const ContactAndFooter: React.FC = () => {
                 <h3 className="text-xl font-semibold text-gray-800 mb-6">Información Directa (Oficinas)</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
-                    <EnvelopeIcon className="h-6 w-6 text-red-600 flex-shrink-0 mr-3 mt-1" aria-hidden="true" />
+                    <EnvelopeIcon className="h-6 w-6 text-indigo-600 flex-shrink-0 mr-3 mt-1" aria-hidden="true" />
                     <div>
-                      <a href="mailto:Lycpersonalizadasventas@gmail.com" className="text-gray-700 hover:text-red-600 transition-colors">
+                      <a href="mailto:Lycpersonalizadasventas@gmail.com" className="text-gray-700 hover:text-indigo-600 transition-colors">
                         Lycpersonalizadasventas@gmail.com
                       </a>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <PhoneIcon className="h-6 w-6 text-red-600 flex-shrink-0 mr-3 mt-1" aria-hidden="true" />
+                    <PhoneIcon className="h-6 w-6 text-indigo-600 flex-shrink-0 mr-3 mt-1" aria-hidden="true" />
                     <div>
-                      <a href="tel:+5491173671724" className="text-gray-700 hover:text-red-600 transition-colors">
+                      <a href="tel:+5491173671724" className="text-gray-700 hover:text-indigo-600 transition-colors">
                         +549 1173671724
                       </a>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <MapPinIcon className="h-6 w-6 text-red-600 flex-shrink-0 mr-3 mt-1" aria-hidden="true" />
+                    <MapPinIcon className="h-6 w-6 text-indigo-600 flex-shrink-0 mr-3 mt-1" aria-hidden="true" />
                     <address className="text-gray-700 not-italic">
                       Oficinas en: Vicente López, Buenos Aires, Argentina
                     </address>
@@ -46,7 +46,7 @@ const ContactAndFooter: React.FC = () => {
                 <div className="mt-6">
                   <a
                     href="mailto:Lycpersonalizadasventas@gmail.com"
-                    className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors"
+                    className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
                   >
                     <EnvelopeIcon className="h-5 w-5 mr-2 -ml-1" aria-hidden="true" />
                     Enviar Email
