@@ -82,14 +82,14 @@ const ContactAndFooter: React.FC = () => {
         </div>
       </section>
 
-      {/* New Footer Design - Lilac Theme */}
-      <footer className="bg-purple-700 text-purple-100 pt-12 pb-8">
+      {/* New Footer Design - Indigo Theme */}
+      <footer className="bg-indigo-600 text-indigo-50 pt-12 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {/* Column 1: Brand Info */}
             <div>
               <h5 className="text-lg font-semibold text-white mb-3">MERCHANDISING PERSONALIZADO</h5>
-              <p className="text-sm">
+              <p className="text-sm text-indigo-100">
                 Gorras estilo camionero, diseños a medida y artículos publicitarios de alta gama. Vicente López. Cobertura nacional.
               </p>
             </div>
@@ -97,7 +97,7 @@ const ContactAndFooter: React.FC = () => {
             {/* Column 2: Navigation */}
             <div>
               <h5 className="text-lg font-semibold text-white mb-3">Navegación</h5>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-sm text-indigo-100">
                 <li><a href="#features" className="hover:text-white transition-colors">Servicios</a></li>
                 <li><a href="#gallery" className="hover:text-white transition-colors">Galería</a></li>
                 <li><a href="#contact" className="hover:text-white transition-colors">Contacto</a></li>
@@ -111,35 +111,35 @@ const ContactAndFooter: React.FC = () => {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-black bg-yellow-400 hover:bg-yellow-500 transition-colors shadow-md"
+                className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-500 hover:bg-green-600 transition-colors shadow-md"
               >
                 <WhatsAppIcon className="h-5 w-5 mr-2" />
                 Consultar Precios
               </a>
-              <p className="text-xs mt-2 text-purple-200">Ideal para pedidos por mayor y empresas.</p>
+              <p className="text-xs mt-2 text-indigo-100">Ideal para pedidos por mayor y empresas.</p>
             </div>
 
             {/* Column 4: Follow Us */}
             <div>
               <h5 className="text-lg font-semibold text-white mb-3">Síguenos</h5>
               <div className="flex space-x-4 mb-2">
-                <a href="https://www.instagram.com/lycpersonalizadas?igsh=NnMzMTR4ejlieTJs" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Lycpersonalizadas" className="hover:text-white transition-colors">
+                <a href="https://www.instagram.com/lycpersonalizadas?igsh=NnMzMTR4ejlieTJs" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Lycpersonalizadas" className="text-indigo-100 hover:text-white transition-colors">
                   <InstagramIcon className="h-6 w-6" />
                 </a>
-                <a href="https://www.facebook.com/share/16piV9T2vA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Lycpersonalizadas" className="hover:text-white transition-colors">
+                <a href="https://www.facebook.com/share/16piV9T2vA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Lycpersonalizadas" className="text-indigo-100 hover:text-white transition-colors">
                   <FacebookIcon className="h-6 w-6" />
                 </a>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Lycpersonalizadas" className="hover:text-white transition-colors">
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Lycpersonalizadas" className="text-indigo-100 hover:text-white transition-colors">
                   <WhatsAppIcon className="h-6 w-6" />
                 </a>
               </div>
-              <p className="text-sm">@{instagramHandle}</p>
+              <p className="text-sm text-indigo-100">@{instagramHandle}</p>
             </div>
           </div>
 
-          <hr className="border-t border-purple-500 my-8" />
+          <hr className="border-t border-indigo-400 my-8" />
 
-          <div className="text-center text-sm">
+          <div className="text-center text-sm text-indigo-100">
             <p>&copy; {currentYear} LYCPERSONALIZADAS. Todos los derechos reservados. Tu gorra, tu estampa.</p>
             <p className="mt-1 flex items-center justify-center">
               Creado con <HeartIcon className="h-4 w-4 text-red-500 mx-1" aria-hidden="true" /> para impulsar marcas.
