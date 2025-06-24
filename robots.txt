@@ -1,4 +1,4 @@
-# IMPORTANTE: Reemplaza "YOUR_WEBSITE_URL_HERE" con el dominio real de tu sitio web.
+# CRITICAL SEO: Reemplaza "YOUR_WEBSITE_URL_HERE" con el dominio real y completo de tu sitio web (e.g., https://www.lycpersonalizadas.com.ar).
 User-agent: *
 Allow: /
 
