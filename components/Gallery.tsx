@@ -65,6 +65,12 @@ const galleryImages = [
     src: "https://ik.imagekit.io/lmpdfv6pk/CLIENTES.jpg?updatedAt=1749430659227",
     alt: "Composición de gorras con diseño propio y trucker para clientes felices, ejemplos de material promocional - Ver más",
     postUrl: "https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTcyNzk0NDA4MTk2OTgx?story_media_id=1944791919201607256&igsh=MXdoODFpZzl3M21ibw==" 
+  },
+  {
+    id: 10,
+    src: "https://ik.imagekit.io/lmpdfv6pk/WhatsApp%20Image%202025-07-03%20at%2017.03.26.jpeg?updatedAt=1751577545913",
+    alt: "Gorra trucker negra con logo 'B' personalizado, un ejemplo de nuestros diseños a medida - Ver más en Instagram",
+    postUrl: "https://www.instagram.com/lycpersonalizadas?igsh=NnMzMTR4ejlieTJs"
   }
 ];
 
