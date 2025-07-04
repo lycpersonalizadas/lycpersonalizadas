@@ -4,6 +4,7 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon, InstagramIcon, FacebookIcon, Heart
 
 // For Google Analytics event tracking
 declare const gtag: (command: string, action: string, params: { [key: string]: string; }) => void;
+declare function gtagSendEvent(url: string, params: { [key: string]: string; }): boolean;
 
 const ContactAndFooter: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -11,6 +12,9 @@ const ContactAndFooter: React.FC = () => {
   const message = "Hola! Quisiera más información sobre sus gorras con diseños propios y productos."; // Adjusted message
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   const instagramHandle = "lycpersonalizadas"; // Your Instagram handle
+
+  const emailLink = "mailto:Lycpersonalizadasventas@gmail.com";
+  const phoneLink = "tel:+5491173671724";
 
   return (
     <>
@@ -27,8 +31,8 @@ const ContactAndFooter: React.FC = () => {
                     <EnvelopeIcon className="h-6 w-6 text-indigo-600 flex-shrink-0 mr-3 mt-1" aria-hidden="true" />
                     <div>
                       <a 
-                        href="mailto:Lycpersonalizadasventas@gmail.com" 
-                        onClick={() => typeof gtag === 'function' && gtag('event', 'contact', { 'method': 'email' })}
+                        href={emailLink}
+                        onClick={(e) => { e.preventDefault(); typeof gtagSendEvent === 'function' && gtagSendEvent(emailLink, { 'method': 'email_link' }); }}
                         className="text-gray-700 hover:text-indigo-600 transition-colors">
                         Lycpersonalizadasventas@gmail.com
                       </a>
@@ -38,8 +42,8 @@ const ContactAndFooter: React.FC = () => {
                     <PhoneIcon className="h-6 w-6 text-indigo-600 flex-shrink-0 mr-3 mt-1" aria-hidden="true" />
                     <div>
                       <a 
-                        href="tel:+5491173671724" 
-                        onClick={() => typeof gtag === 'function' && gtag('event', 'contact', { 'method': 'phone' })}
+                        href={phoneLink}
+                        onClick={(e) => { e.preventDefault(); typeof gtagSendEvent === 'function' && gtagSendEvent(phoneLink, { 'method': 'phone_link' }); }}
                         className="text-gray-700 hover:text-indigo-600 transition-colors">
                         +549 1173671724
                       </a>
@@ -54,8 +58,8 @@ const ContactAndFooter: React.FC = () => {
                 </ul>
                 <div className="mt-6">
                   <a
-                    href="mailto:Lycpersonalizadasventas@gmail.com"
-                    onClick={() => typeof gtag === 'function' && gtag('event', 'contact', { 'method': 'email' })}
+                    href={emailLink}
+                    onClick={(e) => { e.preventDefault(); typeof gtagSendEvent === 'function' && gtagSendEvent(emailLink, { 'method': 'email_button' }); }}
                     className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
                   >
                     <EnvelopeIcon className="h-5 w-5 mr-2 -ml-1" aria-hidden="true" />
@@ -119,9 +123,7 @@ const ContactAndFooter: React.FC = () => {
               <h5 className="text-lg font-semibold text-white mb-3">Cotiza Ahora</h5>
               <a
                 href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => typeof gtag === 'function' && gtag('event', 'contact', { 'method': 'whatsapp_footer' })}
+                onClick={(e) => { e.preventDefault(); typeof gtagSendEvent === 'function' && gtagSendEvent(whatsappLink, { 'method': 'whatsapp_footer_button' }); }}
                 className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-500 hover:bg-green-600 transition-colors shadow-md"
               >
                 <WhatsAppIcon className="h-5 w-5 mr-2" />
@@ -140,8 +142,8 @@ const ContactAndFooter: React.FC = () => {
                 <a href="https://www.facebook.com/share/16piV9T2vA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Lycpersonalizadas" className="text-indigo-100 hover:text-white transition-colors">
                   <FacebookIcon className="h-6 w-6" />
                 </a>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Lycpersonalizadas" className="text-indigo-100 hover:text-white transition-colors"
-                  onClick={() => typeof gtag === 'function' && gtag('event', 'contact', { 'method': 'whatsapp_footer_icon' })}>
+                <a href={whatsappLink} aria-label="WhatsApp de Lycpersonalizadas" className="text-indigo-100 hover:text-white transition-colors"
+                  onClick={(e) => { e.preventDefault(); typeof gtagSendEvent === 'function' && gtagSendEvent(whatsappLink, { 'method': 'whatsapp_footer_icon' }); }}>
                   <WhatsAppIcon className="h-6 w-6" />
                 </a>
               </div>

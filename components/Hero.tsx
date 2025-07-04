@@ -3,6 +3,7 @@ import React from 'react';
 
 // For Google Analytics event tracking
 declare const gtag: (command: string, action: string, params: { [key: string]: string; }) => void;
+declare function gtagSendEvent(url: string, params: { [key: string]: string; }): boolean;
 
 const Hero: React.FC = () => {
   const phoneNumber = "5491173671724"; 
@@ -28,9 +29,12 @@ const Hero: React.FC = () => {
         </p>
         <a
           href={whatsappLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => typeof gtag === 'function' && gtag('event', 'contact', { 'method': 'whatsapp_hero' })}
+          onClick={(e) => {
+            e.preventDefault();
+            if (typeof gtagSendEvent === 'function') {
+              gtagSendEvent(whatsappLink, { 'method': 'whatsapp_hero' });
+            }
+          }}
           className="mt-8 w-full inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
         >
           Cotiza tus Gorras publicitarias
