@@ -1,9 +1,5 @@
-
 import React from 'react';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon, InstagramIcon, FacebookIcon, HeartIcon, WhatsAppIcon } from './icons'; // Added WhatsAppIcon
-
-// Declare gtagSendEvent from the global scope for TypeScript
-declare function gtagSendEvent(url: string, method: string): boolean;
 
 const ContactAndFooter: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -31,7 +27,7 @@ const ContactAndFooter: React.FC = () => {
                     <div>
                       <a 
                         href={emailLink}
-                        onClick={(e) => { e.preventDefault(); gtagSendEvent(emailLink, 'email_contact'); }}
+                        onClick={() => window.sendGtagEvent('email_contact')}
                         className="text-gray-700 hover:text-indigo-600 transition-colors">
                         Lycpersonalizadasventas@gmail.com
                       </a>
@@ -42,7 +38,7 @@ const ContactAndFooter: React.FC = () => {
                     <div>
                       <a 
                         href={phoneLink}
-                        onClick={(e) => { e.preventDefault(); gtagSendEvent(phoneLink, 'phone_contact'); }}
+                        onClick={() => window.sendGtagEvent('phone_contact')}
                         className="text-gray-700 hover:text-indigo-600 transition-colors">
                         +549 1173671724
                       </a>
@@ -58,7 +54,7 @@ const ContactAndFooter: React.FC = () => {
                 <div className="mt-6">
                   <a
                     href={emailLink}
-                    onClick={(e) => { e.preventDefault(); gtagSendEvent(emailLink, 'email_contact_button'); }}
+                    onClick={() => window.sendGtagEvent('email_contact_button')}
                     className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
                   >
                     <EnvelopeIcon className="h-5 w-5 mr-2 -ml-1" aria-hidden="true" />
@@ -122,7 +118,9 @@ const ContactAndFooter: React.FC = () => {
               <h5 className="text-lg font-semibold text-white mb-3">Cotiza Ahora</h5>
               <a
                 href={whatsappLink}
-                onClick={(e) => { e.preventDefault(); gtagSendEvent(whatsappLink, 'whatsapp_footer_button'); }}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => window.sendGtagEvent('whatsapp_footer_button')}
                 className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-500 hover:bg-green-600 transition-colors shadow-md"
               >
                 <WhatsAppIcon className="h-5 w-5 mr-2" />
@@ -143,7 +141,9 @@ const ContactAndFooter: React.FC = () => {
                 </a>
                 <a 
                    href={whatsappLink}
-                   onClick={(e) => { e.preventDefault(); gtagSendEvent(whatsappLink, 'whatsapp_footer_icon'); }}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   onClick={() => window.sendGtagEvent('whatsapp_footer_icon')}
                    aria-label="WhatsApp de Lycpersonalizadas" className="text-indigo-100 hover:text-white transition-colors">
                   <WhatsAppIcon className="h-6 w-6" />
                 </a>

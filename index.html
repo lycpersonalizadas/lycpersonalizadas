@@ -23,23 +23,16 @@
   gtag('js', new Date());
 
   gtag('config', 'G-GRRJTC91YV');
-</script>
-<!-- Google tag (gtag.js) event - delayed navigation helper -->
-<script>
-  // Helper function to delay opening a URL until a gtag event is sent.
-  // Call it in response to an action that should navigate to a URL.
-  function gtagSendEvent(url, method) {
-    var callback = function () {
-      if (typeof url === 'string') {
-        window.location = url;
+
+  // Helper function to safely send a gtag event without breaking navigation
+  window.sendGtagEvent = function(method) {
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion_event_contact', { 'method': method });
       }
-    };
-    gtag('event', 'conversion_event_contact', {
-      'event_callback': callback,
-      'event_timeout': 2000,
-      'method': method
-    });
-    return false;
+    } catch (e) {
+      console.error('GTag event tracking error:', e);
+    }
   }
 </script>
 <script type="importmap">

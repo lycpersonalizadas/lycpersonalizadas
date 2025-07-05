@@ -1,7 +1,13 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+
+// Declare the global gtag helper function for TypeScript
+declare global {
+  interface Window {
+    sendGtagEvent: (method: string) => void;
+  }
+}
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {

@@ -1,8 +1,4 @@
-
 import React from 'react';
-
-// Declare gtagSendEvent from the global scope for TypeScript
-declare function gtagSendEvent(url: string, method: string): boolean;
 
 const Hero: React.FC = () => {
   const phoneNumber = "5491173671724"; 
@@ -28,10 +24,9 @@ const Hero: React.FC = () => {
         </p>
         <a
           href={whatsappLink}
-          onClick={(e) => {
-            e.preventDefault();
-            gtagSendEvent(whatsappLink, 'whatsapp_hero');
-          }}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => window.sendGtagEvent('whatsapp_hero')}
           className="mt-8 w-full inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
         >
           Cotiza tus Gorras publicitarias
