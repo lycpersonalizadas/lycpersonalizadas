@@ -1,5 +1,4 @@
-# IMPORTANTE: Reemplaza "YOUR_WEBSITE_URL_HERE" con el dominio real de tu sitio web.
 User-agent: *
 Allow: /
 
-Sitemap: YOUR_WEBSITE_URL_HERE/sitemap.xml
+Sitemap: https://www.gorraspublicitarias.com.ar/sitemap.xml

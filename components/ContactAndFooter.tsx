@@ -1,5 +1,5 @@
 import React from 'react';
-import { EnvelopeIcon, PhoneIcon, MapPinIcon, InstagramIcon, FacebookIcon, HeartIcon, WhatsAppIcon } from './icons'; // Added WhatsAppIcon
+import { EnvelopeIcon, PhoneIcon, MapPinIcon, InstagramIcon, FacebookIcon, HeartIcon, WhatsAppIcon, TruckIcon } from './icons'; // Added WhatsAppIcon and TruckIcon
 
 const ContactAndFooter: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -20,7 +20,7 @@ const ContactAndFooter: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               {/* Información Directa Column */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-6">Información Directa (Oficinas)</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-6">Información Directa</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <EnvelopeIcon className="h-6 w-6 text-indigo-600 flex-shrink-0 mr-3 mt-1" aria-hidden="true" />
@@ -47,11 +47,11 @@ const ContactAndFooter: React.FC = () => {
                   <li className="flex items-start">
                     <MapPinIcon className="h-6 w-6 text-indigo-600 flex-shrink-0 mr-3 mt-1" aria-hidden="true" />
                     <address className="text-gray-700 not-italic">
-                      Oficinas en: Vicente López, Buenos Aires, Argentina
+                      Base de operaciones en: Vicente López, Buenos Aires
                     </address>
                   </li>
                 </ul>
-                <div className="mt-6">
+                <div className="mt-8">
                   <a
                     href={emailLink}
                     onClick={() => window.sendGtagEvent('email_contact_button')}
@@ -65,12 +65,18 @@ const ContactAndFooter: React.FC = () => {
 
               {/* Horario de Atención Column */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-6">Atención Online</h3>
-                <div className="space-y-2 text-gray-700">
-                  <p>Asistencia online personalizada para tus consultas.</p>
-                  <p>Comunícate para solicitar gorras estilo camionero, remeras y otros artículos, desde toda Argentina.</p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-6">Atención y Cobertura</h3>
+                <div className="space-y-4 text-gray-700">
+                  <p>Asistencia online personalizada para tus consultas sobre gorras trucker, remeras y más.</p>
+                  <div className="mt-4">
+                    <h4 className="font-semibold text-gray-800 flex items-center">
+                      <TruckIcon className="h-5 w-5 mr-2 text-indigo-600" />
+                      Cobertura Nacional
+                    </h4>
+                    <p className="text-gray-700 mt-1">Desde nuestro taller en Vicente López, realizamos envíos seguros y rápidos a todas las provincias de Argentina.</p>
+                  </div>
                 </div>
-                <p className="mt-6 text-gray-600 italic">
+                 <p className="mt-6 text-gray-600 italic">
                   ¡Explora nuestras redes y conoce nuestros proyectos de material de marca y soluciones para celebraciones!
                 </p>
               </div>

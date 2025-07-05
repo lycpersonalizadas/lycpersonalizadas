@@ -17,10 +17,10 @@ const Hero: React.FC = () => {
       <div aria-hidden="true" className="absolute inset-0 bg-gray-900 opacity-80"></div>
       <div className="relative max-w-4xl mx-auto py-32 px-6 flex flex-col items-center text-center sm:py-48 lg:px-0">
         <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl drop-shadow-md">
-          Gorras Únicas para tu Empresa : La Mejor Calidad al mejor Precio
+          Gorras Trucker Personalizadas por Mayor: Calidad y Diseño para tu Marca
         </h1>
         <p className="mt-6 max-w-md mx-auto text-lg text-gray-300 sm:text-xl md:mt-8 md:max-w-3xl drop-shadow-sm">
-          Diseñamos gorras trucker con diseños propios, creaciones originales y artículos publicitarios de primer nivel (ventas por mayor disponibles) para todo el país, con base en Vicente López. La excelencia en diseño y estampado (sublimación, DTF, vinilo) es nuestra garantía. La satisfacción de nuestros clientes es nuestro mejor respaldo.
+          Potenciamos tu marca con gorras trucker de diseño propio, creaciones originales y artículos publicitarios de primer nivel. Ofrecemos ventas por mayor a todo el país desde Vicente López, garantizando excelencia en sublimación, DTF y vinilo.
         </p>
         <a
           href={whatsappLink}
